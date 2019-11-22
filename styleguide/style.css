@@ -15,9 +15,9 @@ body {
 header {
   font-weight: bold;
   text-align: center;
-  background-color: #EBEBEB;
-  margin: 5em 5em 5em 15em;
-  padding: 1em;
+  /* background-color: #EBEBEB; */
+  margin: 0em 5em 0em 15em;
+  padding: 2em;
 }
 
 main {
@@ -27,6 +27,7 @@ main {
 
 .paper {
   background-color: #EBEBEB;
+  margin-bottom: 5em;
 }
 
 h1 {
@@ -41,7 +42,7 @@ h2 {
 }
 
 .brackLine {
-  width: 80%;
+  width: 90%;
   height: 1px;
   margin-left: auto;
   margin-right: auto;
@@ -95,10 +96,18 @@ ul li a:hover {
   text-align: center;
 }
 
+section {
+  width: 100%;
+  min-height: 90vh; /* DELETE - Fill space for proof of concept */
+}
+
+.content {
+  margin: 5%;
+}
+
 .logoSection, .colorSection, .typographySection, .navigationSection,
 .imagesSection, .iconSection, .buttonSection, .imputSection, .languageSection {
-  width: 100%;
-  min-height: 90vh;
+
 }
 
 /* COLOR SECTION */
