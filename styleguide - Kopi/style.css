@@ -32,7 +32,6 @@ main {
 h1 {
   font-size: 80px;
   text-align: center;
-  color: #004481;
 }
 
 h2 {
@@ -68,8 +67,6 @@ nav {
 
 ul {
   list-style: none;
-  margin-top: 50vh;
-  transform: translateY(-50%);
 }
 
 ul li a {
