@@ -193,3 +193,17 @@ section {
 .gap {
   margin-right: 10px;
 }
+
+.downloadButton {
+  background-color: #FFFFFF;
+  padding: 1em;
+  border-width: 2px;
+  border-color: #000000;
+  border-radius: 1em;
+}
+
+
+.downloadButton a {
+  color: #000000;
+  text-decoration: none;
+}
