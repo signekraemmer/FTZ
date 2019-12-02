@@ -149,14 +149,10 @@ section {
   display: flex;
   flex-direction: row;
   grid-template-columns: 50% 50%;
-  margin-top: 3vh;
 }
 
 .swatchPink {
    background-color: pink;
-   box-sizing: border-box;
-   color: pink;
-   padding: auto;
    width: 100%;
    display: flex;
    flex-direction: row;
@@ -183,6 +179,36 @@ section {
 
 .bgGreen {
   background-color: green;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.swatchBlue {
+  background-color: blue;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  transform: skewX(20deg) translateX(10%);
+}
+
+.bgBlue {
+  background-color: blue;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.swatchYellow {
+  background-color: yellow;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  transform: skewX(20deg) translateX(-10%);
+}
+
+.bgYellow {
+  background-color: yellow;
   width: 100%;
   display: flex;
   flex-direction: row;
