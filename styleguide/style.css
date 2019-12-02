@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
 * {
   padding: 0px;
   margin: 0px;
-  font-family: ;
+  font-family: 'Open Sans', sans-serif;
 }
 
 html {
@@ -42,6 +44,7 @@ h2 {
 }
 
 .brackLine {
+  margin-top: 5px;
   width: 90%;
   height: 1px;
   margin-left: auto;
@@ -103,6 +106,15 @@ section {
 
 .content {
   margin: 5%;
+}
+
+.box {
+  float: left;
+  width: 40%;
+  padding: 20px;
+  border-style: solid;
+  border-color: #000000;
+  margin: 10px;
 }
 
 .logoSection, .colorSection, .typographySection, .navigationSection,
