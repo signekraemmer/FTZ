@@ -4,6 +4,7 @@
   padding: 0px;
   margin: 0px;
   font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
 }
 
 html {
@@ -108,6 +109,20 @@ section {
   margin: 5%;
 }
 
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  }
+
+/* Clear floats after the columns */
+.twoColumns:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .logoSection, .colorSection, .typographySection, .navigationSection,
 .imagesSection, .iconSection, .buttonSection, .imputSection, .languageSection {
 
@@ -198,15 +213,25 @@ section {
 }
 
 .downloadButton {
-  background-color: #FFFFFF;
+  background-color: #b5b5b5;
   padding: 1em;
   border-width: 2px;
   border-color: #000000;
   border-radius: 1em;
+  width: 15em;
+  margin: auto;
 }
 
 
 .downloadButton a {
-  color: #000000;
+  color: #ffffff;
+  font-weight: bold;
   text-decoration: none;
+}
+
+.center {
+  display: flex;
+  margin: auto;
+  width: 30%;
+  padding: 10px;
 }
