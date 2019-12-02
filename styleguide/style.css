@@ -108,15 +108,6 @@ section {
   margin: 5%;
 }
 
-.box {
-  float: left;
-  width: 40%;
-  padding: 20px;
-  border-style: solid;
-  border-color: #000000;
-  margin: 10px;
-}
-
 .logoSection, .colorSection, .typographySection, .navigationSection,
 .imagesSection, .iconSection, .buttonSection, .imputSection, .languageSection {
 
