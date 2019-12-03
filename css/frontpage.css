@@ -1,43 +1,42 @@
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
 .active {
   background-color: #4CAF50;
 }
 
 .navFlex {
+  background-color: #002F67;
   display: flex;
   width: 100vw;
   height: 10vh;
-  background-color: #000000;
   justify-content: space-between;
 }
 
-.burger {
+.burgerBlock {
+  display: flex;
+  justify-content: center;
   flex: 1;
-  background-color: blue;
+}
+
+.burger {
+  position: absolute;
+  top: 5vh;
+  transform: translateY(-50%);
+}
+
+.burger:hover {
+  cursor: pointer;
+}
+
+.line1, .line2, .line3 {
+  position: relative;
+  background-color: #FFFFFF;
+  height: 3px;
+  width: 25px;
+  margin: 6px 0px;
 }
 
 .logo {
+  color: #FFFFFF;
   flex: 3;
-  background-color: yellow;
   text-align: center;
   line-height: 10vh;
 
@@ -49,5 +48,4 @@ li a {
 
 .search {
   flex: 1;
-  background-color: green;
 }
