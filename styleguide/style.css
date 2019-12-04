@@ -151,18 +151,17 @@ section {
   grid-template-columns: 50% 50%;
 }
 
-.swatchPink {
-   background-color: pink;
+.swatchDarkBlue {
+   background-color: #002F67;
    width: 100%;
    display: flex;
    flex-direction: row;
    transform: skewX(20deg) translateX(10%);
 }
 
-.bgPink {
-  background-color: pink;
+.bgDarkBlue {
+  background-color: #002F67;
   box-sizing: border-box;
-  color: pink;
   padding: auto;
   width: 100%;
   display: flex;
@@ -170,7 +169,7 @@ section {
 }
 
 .swatchGreen {
-  background-color: green;
+  background-color: #9CD9B8;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -178,37 +177,37 @@ section {
 }
 
 .bgGreen {
-  background-color: green;
+  background-color: #9CD9B8;
   width: 100%;
   display: flex;
   flex-direction: row;
 }
 
-.swatchBlue {
-  background-color: blue;
+.swatchLightBlue {
+  background-color: #3385E8;
   width: 100%;
   display: flex;
   flex-direction: row;
   transform: skewX(20deg) translateX(10%);
 }
 
-.bgBlue {
-  background-color: blue;
+.bgLightBlue {
+  background-color: #3385E8;
   width: 100%;
   display: flex;
   flex-direction: row;
 }
 
-.swatchYellow {
-  background-color: yellow;
+.swatchSand {
+  background-color: #D9D1A9;
   width: 100%;
   display: flex;
   flex-direction: row;
   transform: skewX(20deg) translateX(-10%);
 }
 
-.bgYellow {
-  background-color: yellow;
+.bgSand {
+  background-color: #D9D1A9;
   width: 100%;
   display: flex;
   flex-direction: row;
