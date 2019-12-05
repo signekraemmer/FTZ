@@ -3,3 +3,42 @@
   margin: 0px;
   font-family: ;
 }
+
+
+/* FOLD UD SIDENAV */
+.sideBurger {
+  height: 82.55vh;
+  width: 60%;
+  position: fixed;
+  top: 8.55vh;
+  z-index: 1000;
+  right: 0;
+  background-color: #17163E;
+  overflow-x: hidden;
+  transition: 0.5s;
+  transform: translateX(100%);
+}
+
+.sideBurger.active {
+  transform: translateX(0%);
+  background-color: #17163E;
+}
+
+.sideBurger a {
+  padding: 10px;
+  margin-left: 30px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sideBar {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: fixed;
+  bottom: 0px;
+}
