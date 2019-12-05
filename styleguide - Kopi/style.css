@@ -39,6 +39,13 @@ h2 {
   text-align: center;
 }
 
+p {
+font-size: 1.5em;
+text-align: center;
+}
+
+
+
 .brackLine {
   width: 80%;
   height: 1px;
@@ -96,6 +103,11 @@ ul li a:hover {
 .imagesSection, .iconSection, .buttonSection, .imputSection, .languageSection {
   width: 100%;
   min-height: 90vh;
+}
+
+/*LOGOO section*/
+.logoSection img{
+  margin-left: 7vw;
 }
 
 /* COLOR SECTION */
