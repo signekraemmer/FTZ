@@ -3,3 +3,55 @@
   margin: 0px;
   font-family: ;
 }
+
+.active {
+  background-color: #4CAF50;
+}
+
+.navFlex {
+  background-color: #002F67;
+  display: flex;
+  width: 100vw;
+  height: 10vh;
+  justify-content: space-between;
+}
+
+.burgerBlock {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.burger {
+  position: absolute;
+  top: 5vh;
+  transform: translateY(-50%);
+}
+
+.burger:hover {
+  cursor: pointer;
+}
+
+.line1, .line2, .line3 {
+  position: relative;
+  background-color: #FFFFFF;
+  height: 3px;
+  width: 25px;
+  margin: 6px 0px;
+}
+
+.logo {
+  color: #FFFFFF;
+  flex: 3;
+  text-align: center;
+  line-height: 10vh;
+
+}
+
+.logo p {
+  vertical-align: middle;
+}
+
+.search {
+  flex: 1;
+}
