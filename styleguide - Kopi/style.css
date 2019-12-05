@@ -182,3 +182,33 @@ ul li a:hover {
 .gap {
   margin-right: 10px;
 }
+
+/*ICONS START*/
+
+.grid-box {
+  width: 20vw;
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  background-color: #002F67;
+  padding: 3vh 4vw 2vh 2vw;
+  margin-left: 8vw;
+  border: 5px solid white;
+  border-radius: 15px;
+}
+
+.grid-box2 {
+  width: 20vw;
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  background-color: #002F67;
+  padding: 3vh 4vw 2vh 2vw;
+  margin-left: 3.5vw;
+  border: 5px solid white;
+  border-radius: 15px;
+}
+
+.grid-item {
+  padding: 15px 10px 10px;
+  font-size: 18px;
+  text-align: center;
+}
