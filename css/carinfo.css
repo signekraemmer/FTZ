@@ -1,58 +1,25 @@
-.searchBar {
-  position: relative;
-  left: 50%;
-  top: 40%;
-  transform: translate(-50%, -50%);
-  /* Rest is for proof of concept */
-  height: 5vh;
-  width: 70vw;
-  background-color: green;
-}
-
-.searchButton {
-  position: relative;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  /* Rest is for proof of concept */
-  height: 5vh;
-  width: 30vw;
-  background-color: yellow;
-}
-
-.searchContainer {
+.carContainer {
   position: relative;
   background-color: red;
-  height: 20vh;
+  height: 60vh;
   width: 100vw;
 }
 
-.loginContainer {
+.categoryContainer {
   color: #FFFFFF;
   position: relative;
   background-color: blue;
-  height: 70vh;
+  height: 30vh;
   width: 100vw;
   text-align: center;
 }
 
-.loginContainer h3 {
+.categoryContainer h3 {
   padding-top: 5vh;
 }
 
-.loginContainer p {
+.categoryContainer p {
   margin: 2vh auto;
   line-height: 1.5em;
   max-width: 80%;
-}
-
-.loginButton {
-  position: relative;
-  top: 2%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /* Rest is for proof of concept */
-  height: 5vh;
-  width: 30vw;
-  background-color: pink;
 }
