@@ -1,32 +1,83 @@
-.searchBar {
-  position: relative;
-  left: 50%;
-  top: 40%;
-  transform: translate(-50%, -50%);
-  /* Rest is for proof of concept */
-  height: 5vh;
-  width: 70vw;
-  background-color: green;
-}
-
-.searchButton {
-  position: relative;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  /* Rest is for proof of concept */
-  height: 5vh;
-  width: 30vw;
-  background-color: yellow;
+body {
+  	background-image: url(../images/loginbg.png);
+    /* Shadow goes inward from every 0 point, up to 1000px */
+    box-shadow: inset 0 0 0 1000px rgba(0,47,103,.8);
 }
 
 .searchContainer {
   position: relative;
-  background-color: red;
-  height: 20vh;
+  height: 90vh;
   width: 100vw;
 }
 
+.searchContainer h1 {
+  position: relative;
+  text-align: center;
+  top: 15vh;
+  color: #FFFFFF;
+}
+
+.searchBar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 40%;
+}
+
+input {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70vw;
+  height: 30px;
+  font-size: 24px;
+  /* Removes decorations */
+  border:none;
+  background-color:transparent;
+  outline: none;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.inputBox img {
+  position: relative;
+  right: -5vw;
+}
+
+button {
+  position: relative;
+  margin-top: 2vh;
+  font-size: 20px;
+  height: 40px;
+  width: 100px;
+  background-color: #9CD9B9;
+  border-style: none;
+  border-radius: 3em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.inputLine {
+  position: relative;
+  background-color: #FFFFFF;
+  height: 2px;
+  width: 72vw;
+  left: 50%;
+  margin-top: 3px;
+  transform: translateX(-50%);
+}
+
+.loginOption {
+  position: relative;
+  top: 60vh;
+}
+
+.loginButton {
+  width: 150px;
+}
+
+/*
 .loginContainer {
   color: #FFFFFF;
   position: relative;
@@ -51,8 +102,7 @@
   top: 2%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* Rest is for proof of concept */
   height: 5vh;
   width: 30vw;
   background-color: pink;
-}
+} */
