@@ -5,34 +5,16 @@
   width: 100vw;
 }
 
-.categoryContainer {
-  color: #FFFFFF;
-  position: relative;
-  background-color: blue;
-  height: 300px;
-  width: 100vw;
-  text-align: center;
-}
-
-.categoryContainer h3 {
-  padding-top: 5vh;
-}
-
-.categoryContainer p {
-  margin: 2vh auto;
-  line-height: 1.5em;
-  max-width: 80%;
-}
-
 .categoryGrid {
   display: grid;
-  grid-template-columns: auto auto auto;
+  /* repeat makes it go on forever, 3 is the amount of columns and 1fr is the space each column will take */
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
   padding: 20px;
 }
 
 .categoryItem {
-  background-color: black;
+  background-image: linear-gradient(#1E437D,#122A50);
   height: 0;
   padding-bottom: 100%;
   width: 100%;
@@ -40,6 +22,7 @@
 }
 
 .itemContent {
+  color: #FFFFFF;
   position: relative;
   display: flex;
   flex-direction: column;
