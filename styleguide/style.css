@@ -180,7 +180,6 @@ section {
   display: flex;
   flex-direction: row;
   transform: skewX(20deg) translateX(-10%);
-  margin-left: -2vw;
 }
 
 .bgDarkBlue {
@@ -212,7 +211,6 @@ section {
   display: flex;
   flex-direction: row;
   transform: skewX(20deg) translateX(-10%);
-  margin-left: -2vw;
 }
 
 .bgLightBlue {
@@ -250,7 +248,6 @@ section {
   display: flex;
   flex-direction: row;
   transform: skewX(20deg) translateX(-10%);
-  margin-left: -2vw;
 }
 
 
