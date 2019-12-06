@@ -59,9 +59,10 @@ body {
 .listGrid {
   display: grid;
   /* 1 column, first item 50px, second item with the fr unit is a flex factor, taking up a part of the remaining space. Works like "flex: 1" in flexboxes */
-  grid-template-columns: repeat(1, 50px 1fr);
-  grid-gap: 20px;
+  grid-template-columns: repeat(1, 1fr 2fr);
+  grid-gap: 10px;
   padding: 20px;
+  align-items: center;
 }
 
 .listGrid p {
