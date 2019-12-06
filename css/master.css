@@ -1,7 +1,16 @@
+/* TODO: EXCUSE ME BUT CAN I PLEASE HIDE THE OVERFLOW?!?!?!?!?! */
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 * {
   padding: 0px;
   margin: 0px;
-  font-family: ;
+  overflow-x: hidden;
 }
 
 .active {
@@ -35,7 +44,7 @@
 .burgerList {
   position: absolute;
   top: 10vh;
-  right: 0%;
+  left: 0vw;
   background-color: #002F67;
   height: 90vh;
   width: 50vw;
@@ -45,6 +54,10 @@
 
 .burgerActive {
   transform: translateX(0%);
+}
+
+.listGrid {
+  display: grid;
 }
 
 .line1, .line2, .line3 {
