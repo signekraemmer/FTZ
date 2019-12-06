@@ -301,3 +301,41 @@ section {
   width: 30%;
   padding: 10px;
 }
+
+/*ICONS START*/
+
+.grid-box {
+  width: 20vw;
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  background-color: #002F67;
+  padding: 3vh 4vw 2vh 2vw;
+  margin-left: 11vw;
+  border-radius: 15px;
+  color: white;
+}
+
+.grid-box2 {
+  width: 20vw;
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  background-color: #002F67;
+  padding: 3vh 4vw 2vh 2vw;
+  margin-left: 3.5vw;
+  border-radius: 15px;
+  color: white;
+}
+
+.grid-item {
+  padding: 15px 10px 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* IMAGES START */
+
+.imagesSection img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
