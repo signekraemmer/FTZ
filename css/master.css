@@ -70,12 +70,13 @@ body {
 }
 
 .listTop {
-
+  position: absolute;
+top: 10%;
 }
 
 .listBottom {
   position: absolute;
-  bottom: 0%;
+  bottom: 10%;
 }
 
 .line1, .line2, .line3 {
