@@ -44,6 +44,11 @@ h2 {
   text-align: center;
 }
 
+p {
+  font-size: 18px;
+  text-align: center;
+}
+
 .brackLine {
   margin-top: 5px;
   width: 90%;
@@ -151,16 +156,17 @@ section {
   grid-template-columns: 50% 50%;
 }
 
-.swatchDarkBlue {
-   background-color: #002F67;
+.swatchVeryDarkBlue {
+   background-color: #001834;
    width: 100%;
    display: flex;
    flex-direction: row;
    transform: skewX(20deg) translateX(10%);
+   margin-left: -2vw;
 }
 
-.bgDarkBlue {
-  background-color: #002F67;
+.bgVeryDarkBlue {
+  background-color: #001834;
   box-sizing: border-box;
   padding: auto;
   width: 100%;
@@ -168,16 +174,33 @@ section {
   flex-direction: row;
 }
 
-.swatchGreen {
-  background-color: #9CD9B8;
+.swatchDarkBlue {
+  background-color: #002F67;
   width: 100%;
   display: flex;
   flex-direction: row;
   transform: skewX(20deg) translateX(-10%);
+  margin-left: -2vw;
 }
 
-.bgGreen {
-  background-color: #9CD9B8;
+.bgDarkBlue {
+  background-color: #002F67;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.swatchBlue {
+  background-color: #204988;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  transform: skewX(20deg) translateX(10%);
+  margin-left: -2vw;
+}
+
+.bgBlue {
+  background-color: #204988;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -188,11 +211,34 @@ section {
   width: 100%;
   display: flex;
   flex-direction: row;
-  transform: skewX(20deg) translateX(10%);
+  transform: skewX(20deg) translateX(-10%);
+  margin-left: -2vw;
 }
 
 .bgLightBlue {
   background-color: #3385E8;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.bgGreen {
+  background-color: #9CD9B8;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.swatchGreen {
+  background-color: #9CD9B8;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  transform: skewX(20deg) translateX(10%);
+  margin-left: -2vw;
+}
+
+.bgSand {
+  background-color: #D9D1A9;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -204,14 +250,9 @@ section {
   display: flex;
   flex-direction: row;
   transform: skewX(20deg) translateX(-10%);
+  margin-left: -2vw;
 }
 
-.bgSand {
-  background-color: #D9D1A9;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-}
 
 .whiteText { /* WHITE TEXT BOX, */
   color: #ffffff;
