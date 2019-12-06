@@ -58,6 +58,23 @@ body {
 
 .listGrid {
   display: grid;
+  /* 1 column, first item 50px, second item with the fr unit is a flex factor, taking up a part of the remaining space. Works like "flex: 1" in flexboxes */
+  grid-template-columns: repeat(1, 50px 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.listGrid p {
+  color: #FFFFFF;
+}
+
+.listTop {
+
+}
+
+.listBottom {
+  position: absolute;
+  bottom: 0%;
 }
 
 .line1, .line2, .line3 {
