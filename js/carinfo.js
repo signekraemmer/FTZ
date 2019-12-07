@@ -1,5 +1,8 @@
 console.log("carinfo.js loaded successfully!");
 
+// This variable holds all the created notes
+let notes = document.getElementsByClassName("noteCircle");
+
 // Click on car element
 document.getElementById("carLeft").addEventListener("click", cursorPosition);
 
@@ -25,8 +28,8 @@ function createNote(posX, posY) {
   // Inserts a new note inside the defined container
   let noteContainer = document.getElementsByClassName("noteContainer")[0];
   noteContainer.innerHTML += newNote;
-  // let notes = document.getElementsByClassName("noteCircle");
-  console.log(notes);
+
+  // TODO: This can probably be done when the note is spawned.
   for (let i = 0; i < notes.length; i++) {
     notes[i].addEventListener("click", openNote);
   }
@@ -34,7 +37,6 @@ function createNote(posX, posY) {
 
 // Click on a note
 // TODO: ADD A QUERY https://flaviocopes.com/add-click-event-to-dom-list/
-let notes = document.getElementsByClassName("noteCircle");
 // console.log(notes);
 
 // for (let i = 0; i < notes.length; i++) {
@@ -44,7 +46,8 @@ let notes = document.getElementsByClassName("noteCircle");
 // Open the note
 function openNote() {
   console.log("OpenNote");
-  console.log(notes);
+  notes[0].classList.toggle("active");
+  // TODO: Need to do exactly this, but at the specific note which is clicked
 }
 
 // Make the note able to have user input and save it
