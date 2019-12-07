@@ -39,6 +39,8 @@ body {
 }
 
 .txtb {
+  /*border-bottom: 2px solid white;
+  position: relative;*/
   margin: 20px 0;
   background: yellow;
   border-radius: 6px;
