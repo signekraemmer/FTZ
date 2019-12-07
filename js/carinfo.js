@@ -25,18 +25,21 @@ function createNote(posX, posY) {
   // Inserts a new note inside the defined container
   let noteContainer = document.getElementsByClassName("noteContainer")[0];
   noteContainer.innerHTML += newNote;
-  let notes = document.getElementsByClassName("noteCircle");
+  // let notes = document.getElementsByClassName("noteCircle");
   console.log(notes);
+  for (let i = 0; i < notes.length; i++) {
+    notes[i].addEventListener("click", openNote);
+  }
 }
 
 // Click on a note
 // TODO: ADD A QUERY https://flaviocopes.com/add-click-event-to-dom-list/
 let notes = document.getElementsByClassName("noteCircle");
-console.log(notes);
+// console.log(notes);
 
-for (let i = 0; i < notes.length; i++) {
-  notes[i].addEventListener("click", openNote);
-}
+// for (let i = 0; i < notes.length; i++) {
+//   notes[i].addEventListener("click", openNote);
+// }
 
 // Open the note
 function openNote() {
