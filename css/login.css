@@ -73,3 +73,7 @@ body {
 .signup-form a:hover {
   background: brown;
 }
+
+#terms {
+  position: relative;
+}
