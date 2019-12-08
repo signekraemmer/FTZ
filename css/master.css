@@ -44,7 +44,7 @@ body {
 .burgerList {
   position: absolute;
   top: 10vh;
-  left: 0vw;
+  right: 0vw;
   background-color: #002F67;
   height: 90vh;
   width: 50vw;
