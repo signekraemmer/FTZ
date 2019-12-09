@@ -40,21 +40,20 @@ body {
   position: relative;
   margin: 20px 0;
   background: none;
-}
-
-.txtb {
-
+  font-size: 15px;
+  color: white;
 }
 
 #signupBtn {
   margin-top: 20px;
   margin-bottom: 20px;
-  background: grey;
-  color: purple;
+  background: #9CD9B8;
+  color: #001834;
   border-radius: 44px;
   text-align: center;
   cursor: pointer;
   transition: 0.8s;
+  border: none;
 }
 
 #signupBtn:hover {
@@ -70,12 +69,18 @@ body {
   display: block;
 }
 
-.signupForm a:hover {
-  background: brown;
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.check {
+  max-height: 20px;
+  width: 50px !important;
 }
 
 #terms {
-  position: relative;
+  color: white;
 }
 
 #loginBtn {
