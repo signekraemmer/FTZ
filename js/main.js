@@ -4,5 +4,5 @@ document.getElementsByClassName("burger")[0].addEventListener("click", burgerLis
 
 function burgerListSlide() {
   console.log("success");
-  document.getElementsByClassName("burgerList")[0].classList.toggle("burgerActive");
+  document.getElementsByClassName("magicBox")[0].classList.toggle("burgerActive");
 }
