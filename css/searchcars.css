@@ -68,12 +68,14 @@ button {
   transform: translateX(-50%);
 }
 
-.loginOption {
+.userOption {
+  display: flex;
+  flex-direction: column;
   position: relative;
-  top: 60vh;
+  top: 50vh;
 }
 
-.loginButton {
+.userOption button {
   width: 150px;
 }
 
