@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
 * {
   padding: 0px;
   margin: 0px;
-  font-family: ;
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
 }
 
 html {
@@ -26,7 +29,7 @@ main {
 }
 
 .paper {
-  background-color: #EBEBEB;
+  /* background-color: #EBEBEB; */
   margin-bottom: 5em;
 }
 
@@ -41,7 +44,13 @@ h2 {
   text-align: center;
 }
 
+p {
+  font-size: 18px;
+  text-align: center;
+}
+
 .brackLine {
+  margin-top: 5px;
   width: 90%;
   height: 1px;
   margin-left: auto;
@@ -105,6 +114,20 @@ section {
   margin: 5%;
 }
 
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  }
+
+/* Clear floats after the columns */
+.twoColumns:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .logoSection, .colorSection, .typographySection, .navigationSection,
 .imagesSection, .iconSection, .buttonSection, .imputSection, .languageSection {
 
@@ -131,48 +154,106 @@ section {
   display: flex;
   flex-direction: row;
   grid-template-columns: 50% 50%;
-  margin-top: 3vh;
 }
 
-.swatchPink {
-   background-color: pink;
-   box-sizing: border-box;
-   color: pink;
-   padding: auto;
+.swatchVeryDarkBlue {
+   background-color: #001834;
    width: 100%;
    display: flex;
    flex-direction: row;
    transform: skewX(20deg) translateX(10%);
+   margin-left: -2vw;
 }
 
-.bgPink {
-  background-color: pink;
+.bgVeryDarkBlue {
+  background-color: #001834;
   box-sizing: border-box;
-  color: pink;
   padding: auto;
   width: 100%;
   display: flex;
   flex-direction: row;
 }
 
-.swatchGreen {
-  background-color: green;
+.swatchDarkBlue {
+  background-color: #002F67;
   width: 100%;
   display: flex;
   flex-direction: row;
   transform: skewX(20deg) translateX(-10%);
 }
 
-.bgGreen {
-  background-color: green;
+.bgDarkBlue {
+  background-color: #002F67;
   width: 100%;
   display: flex;
   flex-direction: row;
 }
 
+.swatchBlue {
+  background-color: #204988;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  transform: skewX(20deg) translateX(10%);
+  margin-left: -2vw;
+}
+
+.bgBlue {
+  background-color: #204988;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.swatchLightBlue {
+  background-color: #3385E8;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  transform: skewX(20deg) translateX(-10%);
+}
+
+.bgLightBlue {
+  background-color: #3385E8;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.bgGreen {
+  background-color: #9CD9B8;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.swatchGreen {
+  background-color: #9CD9B8;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  transform: skewX(20deg) translateX(10%);
+  margin-left: -2vw;
+}
+
+.bgSand {
+  background-color: #D9D1A9;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.swatchSand {
+  background-color: #D9D1A9;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  transform: skewX(20deg) translateX(-10%);
+}
+
+
 .whiteText { /* WHITE TEXT BOX, */
   color: #ffffff;
-  width: 50%;
+  min-width: 300px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -192,4 +273,66 @@ section {
 
 .gap {
   margin-right: 10px;
+}
+
+.downloadButton {
+  background-color: #b5b5b5;
+  padding: 1em;
+  border-width: 2px;
+  border-color: #000000;
+  border-radius: 1em;
+  width: 15em;
+  margin: auto;
+}
+
+
+.downloadButton a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.center {
+  display: flex;
+  margin: auto;
+  width: 30%;
+  padding: 10px;
+}
+
+/*ICONS START*/
+
+.grid-box {
+  width: 20vw;
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  background-color: #002F67;
+  padding: 3vh 4vw 2vh 2vw;
+  margin-left: 11vw;
+  border-radius: 15px;
+  color: white;
+}
+
+.grid-box2 {
+  width: 20vw;
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  background-color: #002F67;
+  padding: 3vh 4vw 2vh 2vw;
+  margin-left: 3.5vw;
+  border-radius: 15px;
+  color: white;
+}
+
+.grid-item {
+  padding: 15px 10px 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* IMAGES START */
+
+.imagesSection img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
