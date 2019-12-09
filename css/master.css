@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
 
 * {
   padding: 0px;
   margin: 0px;
   font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
 }
 
 .active {
@@ -11,6 +19,7 @@
 }
 
 .navFlex {
+  overflow-x: hidden;
   background-color: #002F67;
   display: flex;
   width: 100vw;
@@ -32,6 +41,51 @@
 
 .burger:hover {
   cursor: pointer;
+}
+
+.burgerList {
+  position: absolute;
+  top: 10vh;
+  left: 50vw;
+  height: 90vh;
+  width: 50vw;
+}
+
+.magicBox {
+  width: 100%;
+  height: 100%;
+  background-color: #002F67;
+  transform: translateX(100%); /* 100% */
+  transition: 0.4s ease;
+}
+
+.burgerActive {
+  transform: translateX(0%);
+}
+
+.listGrid {
+  display: grid;
+  /* 1 column, first item 50px, second item with the fr unit is a flex factor, taking up a part of the remaining space. Works like "flex: 1" in flexboxes */
+  grid-template-columns: repeat(1, 1fr 2fr);
+  grid-gap: 10px;
+  padding: 20px;
+  align-items: center;
+}
+
+.listGrid p {
+  /* Space between list items */
+  padding: 10px 0px;
+  color: #FFFFFF;
+}
+
+.listTop {
+  position: absolute;
+  top: 10%;
+}
+
+.listBottom {
+  position: absolute;
+  bottom: 10%;
 }
 
 .line1, .line2, .line3 {
