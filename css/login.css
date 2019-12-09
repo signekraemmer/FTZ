@@ -10,7 +10,7 @@ body {
   background:url(../images/background.jpg);
 }
 
-.signup-form {
+.signupForm {
   width: 300px;
   padding: 20px;
   text-align: center;
@@ -22,13 +22,13 @@ body {
   overflow: hidden;
 }
 
-.signup-form h1 {
+.signupForm h1 {
   margin-top: 0;
   color: white;
   font-size: 30px;
 }
 
-.signup-form input {
+.signupForm input {
   display: block;
   width: 100%;
   padding: 0 16px;
@@ -36,17 +36,17 @@ body {
   box-sizing: border-box;
   outline: none;
   border: none;
+  border-bottom: 2px solid white;
+  position: relative;
+  margin: 20px 0;
+  background: none;
 }
 
 .txtb {
-  /*border-bottom: 2px solid white;
-  position: relative;*/
-  margin: 20px 0;
-  background: yellow;
-  border-radius: 6px;
+
 }
 
-.signup-btn {
+#signupBtn {
   margin-top: 20px;
   margin-bottom: 20px;
   background: grey;
@@ -57,11 +57,11 @@ body {
   transition: 0.8s;
 }
 
-.signup-btn:hover {
+#signupBtn:hover {
   transform: scale(0.96);
 }
 
-.signup-form a {
+.signupForm a {
   text-decoration: none;
   color: #FFF;
   font-size: 14px;
@@ -70,7 +70,7 @@ body {
   display: block;
 }
 
-.signup-form a:hover {
+.signupForm a:hover {
   background: brown;
 }
 
@@ -78,17 +78,18 @@ body {
   position: relative;
 }
 
-.loginBtn {
+#loginBtn {
   margin-top: 20px;
   margin-bottom: 20px;
-  background: grey;
-  color: purple;
+  background: #9CD9B8;
+  color: #001834;
+  font-weight: 600;
   border-radius: 44px;
   text-align: center;
   cursor: pointer;
   transition: 0.8s;
 }
 
-.loginBtn:hover {
+#loginBtn:hover {
   transform: scale(0.96);
 }
