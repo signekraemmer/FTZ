@@ -1,5 +1,10 @@
+let seaBox = document.getElementsByClassName('searchBox')[0];
+seaBox.addEventListener('click', openSearch);
+
 function openSearch() {
-  document.getElementsByClassName('searchBox')
-  .addEventListener('click')
+  console.log("Open search");
+  seaBox.style.width = "300px";
+}
+function openSearch() {
 
 }

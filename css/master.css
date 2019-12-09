@@ -55,13 +55,16 @@
 /* SEARCH SECTION */
 .search {
   flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .searchBox {
   position: fixed;
+  display: flex;
   top: 3vh;
   height: 33px;
-  width: 300px;
+  width: 33px;
   border-radius: 50px;
   background-color: #dedede;
 }
@@ -75,7 +78,6 @@ input {
   justify-content: center;
   align-items: center;
   margin: 0px 15px;
-  height: 28px;
   width: 260px;
   font-size: 16px;
 }
@@ -83,7 +85,6 @@ input {
 .searchIcon {
   float: right;
   width: 40px;
-  height: 40px;
   border-radius: 50px;
   display: flex;
   justify-content: center;
