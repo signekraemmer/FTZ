@@ -62,6 +62,10 @@
   text-align: center;
 }
 
+.today {
+  background-color: #2ECC71
+}
+
 .prev_date {
   color: #CECECE;
 }
