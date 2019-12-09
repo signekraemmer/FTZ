@@ -48,7 +48,7 @@ body {
   background-color: #002F67;
   height: 90vh;
   width: 50vw;
-  transform: translateX(100%);
+  transform: translateX(100%); /* 100% */
   transition: 0.4s ease;
 }
 
