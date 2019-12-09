@@ -1,3 +1,5 @@
+
+
 let dt = new Date();
 
 function RenderDate() {
@@ -30,7 +32,7 @@ function RenderDate() {
   for (x = day; x > 0; x--){
     numb += "<div class='prev_date'>" + (prevDate - x + 1) + "</div>";
   }
-  console.log(day);
+  
   for (i = 1; i <= endDate; i++) {
     if (i == today.getDate() && dt.getMonth() == today.getMonth()) {
       numb += "<div class='today'>" + i + "</div>";
@@ -42,7 +44,6 @@ function RenderDate() {
 
   document.getElementsByClassName("days")[0].innerHTML = numb;
 }
-
 
 function moveDate(swit) {
   if (swit == 'prev') {
