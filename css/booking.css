@@ -1,0 +1,87 @@
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #002F67;
+  }
+}
+
+.bookingWrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bookingCalender {
+  width: 50vw;
+  min-width: 300px;
+  background-color: #FFFFFF;
+  box-shadow:0px 0px 10px 3px #838383;
+}
+
+#month {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.month {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2ECC71;
+  color: #FFFFFF;
+}
+
+.weekends {
+  display: flex;
+  padding: 10px 0;
+  background-color: #27AE60;
+  color: #FFFFFF;
+}
+
+.days {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+
+.days div {
+  margin-bottom: 10px;
+  padding: 10px 0;
+}
+
+.days div:hover {
+  background-color: #DFE6E9;
+  cursor: pointer;
+}
+
+.weekends div, .days div {
+  width: 14.28%;
+  text-align: center;
+}
+
+.today {
+  background-color: #2ECC71
+}
+
+.prev_date {
+  color: #CECECE;
+}
+
+.prev, .next {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+  background-color: #27AE60;
+  border-radius: 50%;
+}
+
+.prev:hover, .next:hover {
+background-color: gray;
+}

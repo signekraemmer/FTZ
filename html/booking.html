@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookning</title>
+  <link rel="shortcut icon" type="image/png" href="../images/favico.png"/>
+  <link rel="stylesheet" href="../css/master.css">
+  <link rel="stylesheet" href="../css/booking.css">
+
+</head>
+
+<body>
+  <div class="navFlex">
+
+    <div class="search">
+
+      <div class="searchBox">
+        <input class="searchText" type="text" value="" placeholder="">
+        <a class="searchIcon" href="#">
+          <img src="../images/favico.png" alt="Søg ikon">
+        </a>
+      </div>
+
+    </div>
+    <div class="logo">
+      <h1>DriveClever</h1>
+    </div>
+    <div class="burgerBlock">
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </div>
+  </div>
+
+
+<section onload="RenderDate">
+
+  <div class="bookingWrapper">
+
+    <div class="bookingCalender">
+      <div class="month">
+         <div class="prev" onclick="moveDate('prev')">
+           <span></span>
+         </div>
+         <div>
+            <h2 id="month"> </h2>
+
+         </div>
+         <div class="next" onclick="moveDate('next')">
+           <span></span>
+         </div>
+      </div>
+
+      <div class="weekends">
+        <div>Søn</div>
+        <div>Man</div>
+        <div>Tir</div>
+        <div>Ons</div>
+        <div>Tors</div>
+        <div>Fre</div>
+        <div>Lør</div>
+
+
+      </div>
+
+      <div class="days">
+
+      </div>
+
+    </div>
+
+  </div>
+
+<script src="../js/booking.js"></script>
+
+</section>
+
+</body>
+
+</html>
