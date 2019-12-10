@@ -23,6 +23,7 @@ body {
 }
 
 .navFlex {
+  z-index: 5;
   overflow-x: hidden;
   background-color: #002F67;
   display: flex;
@@ -48,6 +49,7 @@ body {
 }
 
 .burgerList {
+  z-index: 5;
   position: absolute;
   top: 10vh;
   left: 50vw;
