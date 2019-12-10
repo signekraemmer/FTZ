@@ -92,6 +92,7 @@ ul li a {
 
 ul li:hover {
   background-color: #FFFFFF;
+  font-weight: bold;
 }
 
 ul li a:hover {
