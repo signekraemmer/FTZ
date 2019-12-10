@@ -112,9 +112,12 @@ section {
 }
 
 .content {
+  margin: 5%;
+}
+
+.grids {
   display: flex;
   justify-content: center;
-  margin: 5% auto;
 }
 
 /* Create two equal columns that floats next to each other */
@@ -338,4 +341,24 @@ section {
 .logoBox img {
   align-self: center;
   margin: 50px auto;
+}
+
+#loginBtn {
+    margin: 20px auto;
+    background: #9CD9B8;
+    color: #001834;
+    font-weight: 600;
+    border-radius: 44px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.8s;
+    height: 40px;
+    width: 200px;
+    border: none;
+}
+
+.buttonBox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
