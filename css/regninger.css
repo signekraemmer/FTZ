@@ -3,5 +3,25 @@ h2 {
   font-size: 20px;
   text-align: center;
   margin-top: 2vh;
+}
 
+.scanButton {
+  text-decoration-color: white;
+  width: 65%;
+  height: 6vh;
+  margin-top: 3vh;
+  margin-left: 17vw;
+  background: #9CD9B8;
+  color: #001834;
+  border-radius: 44px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.scanButton:hover {
+  transform: scale(0.96);
 }
