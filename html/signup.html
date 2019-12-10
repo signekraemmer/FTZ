@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../css/master.css">
     <title>Opret en bruger på DriveClever</title>
-    <script src="javascript.js"></script>
+    <script src="../js/signup.js" defer></script>
   </head>
   <body>
 
@@ -76,15 +76,15 @@
     <div class="signupForm">
       <form action="index.html" method="post">
           <h1>Opret bruger</h1>
-          <input type="text" placeholder="Fulde navn">
-          <input type="email" placeholder="E-mail">
-          <input type="password" placeholder="Adgangskode">
-          <input type="password" placeholder="Gentag adgangskode">
+          <input class="formInput" type="text" placeholder="Fulde navn">
+          <input class="formInput" type="email" placeholder="E-mail">
+          <input class="formInput" type="password" placeholder="Adgangskode">
+          <input class="formInput" type="password" placeholder="Gentag adgangskode">
           <div class="checkbox">
-            <input type="checkbox" name="terms" value="accept" class="check">
+            <!--<input type="checkbox" name="terms" value="accept" class="check">-->
             <button type="button" name="button" id="terms" onclick="alert('Popup missing')">Vilkår og brugerbetingelser</button>
           </div>
-          <input type="submit" value="Opret Bruger" id="signupBtn">
+          <a id="signupBtn">Opret bruger</a>
           <a href="login.html">Har allerede en bruger?</a>
       </form>
 

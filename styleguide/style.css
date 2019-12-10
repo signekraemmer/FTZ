@@ -92,6 +92,7 @@ ul li a {
 
 ul li:hover {
   background-color: #FFFFFF;
+  font-weight: bold;
 }
 
 ul li a:hover {
@@ -111,7 +112,9 @@ section {
 }
 
 .content {
-  margin: 5%;
+  display: flex;
+  justify-content: center;
+  margin: 5% auto;
 }
 
 /* Create two equal columns that floats next to each other */
@@ -307,18 +310,7 @@ section {
   grid-template-columns: auto auto;
   background-color: #002F67;
   padding: 3vh 4vw 2vh 2vw;
-  margin-left: 11vw;
-  border-radius: 15px;
-  color: white;
-}
-
-.grid-box2 {
-  width: 20vw;
-  display: inline-grid;
-  grid-template-columns: auto auto;
-  background-color: #002F67;
-  padding: 3vh 4vw 2vh 2vw;
-  margin-left: 3.5vw;
+  margin: auto 5%;
   border-radius: 15px;
   color: white;
 }
@@ -335,4 +327,15 @@ section {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.logoBox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logoBox img {
+  align-self: center;
+  margin: 50px auto;
 }
