@@ -17,6 +17,11 @@ body {
   background-color: #4CAF50;
 }
 
+nav a:visited, nav a:hover, nav a:active, nav a:link {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
 .navFlex {
   z-index: 5;
   overflow-x: hidden;
