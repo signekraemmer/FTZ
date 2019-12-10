@@ -25,3 +25,11 @@ h2 {
 .scanButton:hover {
   transform: scale(0.96);
 }
+
+.regningList {
+  margin: 0;
+  padding: 3px;
+  list-style-type: none;
+  background: #002f67;
+  color: white;
+}
