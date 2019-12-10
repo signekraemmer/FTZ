@@ -35,6 +35,7 @@ h2 {
 
 .regningList li {
   padding: 20px;
+  font-size: 1em;
 }
 
 .regningList li:nth-child(2n) {
