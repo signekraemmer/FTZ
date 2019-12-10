@@ -105,17 +105,66 @@ nav a:visited, nav a:hover, nav a:active, nav a:link {
 }
 
 .logo {
+  position: relative;
   color: #FFFFFF;
   flex: 3;
   text-align: center;
   line-height: 10vh;
-
 }
 
 .logo p {
   vertical-align: middle;
 }
 
+/* SEARCH SECTION */
 .search {
+  position: relative;
   flex: 1;
+  display: flex;
+}
+
+.searchBox {
+  position: absolute;
+  display: flex;
+  top: 5vh;
+  left: 50%;
+  height: 33px;
+  width: 33px;
+  border-radius: 50px;
+  background-color: #DEDEDE;
+  transform: translate(-50%, -50%);
+  transition: 1s ease;
+}
+
+.searchActive {
+  width: 500px;
+}
+
+.searchBox img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+nav input {
+  display: flex;
+  /* float: left; */
+  background: none;
+  border: none;
+  outline: 0;
+  /* justify-content: center; */
+  /* align-items: center; */
+  margin: 0px 5px;
+  width: 260px;
+  font-size: 16px;
+}
+
+.searchIcon {
+  float: right;
+  width: 40px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
