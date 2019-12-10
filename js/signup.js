@@ -2,17 +2,34 @@
 document.getElementById("signupBtn").addEventListener("click", checkInputs);
 
 // This variable gets the inputfields
-let inp = document.getElementsByTagName("input");
+let inp = document.getElementsByClassName("formInput");
 
 //Checks the rest of the inputfields
 function checkInputs() {
-  for (let i = 0; i < inp.length; i++) {
-    if (inp[i].value == "") {
+  // Minus by 1 to avoid counting the checkbox
+//  for (let i = 0; i < inp.length; i++) {
+    if (inp[0].value == "") {
 
-      alert("Indtast venligst " + inp[i].placeholder);
+      alert("Indtast venligst " + inp[0].placeholder);
+    }
 
-    } else {
+    else if (inp[1].value == "") {
+
+      alert("Indtast venligst " + inp[1].placeholder);
+    }
+
+    else if (inp[2].value == "") {
+
+      alert("Indtast venligst " + inp[2].placeholder);
+    }
+
+    else if (inp[3].value == "") {
+
+      alert("Indtast venligst " + inp[3].placeholder);
+    }
+
+    else {
       window.location.href = "frontpage.html";
     }
-  }
+  //}
 }
