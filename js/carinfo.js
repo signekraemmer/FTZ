@@ -35,6 +35,8 @@ function createNote(posX, posY) {
   }
 }
 
+
+// TODO: Make a pop-up confirming they want to make a new bubble, and they just didnt miss the one they tried to click.
 // Click on a note
 // TODO: ADD A QUERY https://flaviocopes.com/add-click-event-to-dom-list/
 // console.log(notes);
@@ -46,8 +48,10 @@ function createNote(posX, posY) {
 // Open the note
 function openNote() {
   console.log("OpenNote");
-  notes[0].classList.toggle("active");
-  // TODO: Need to do exactly this, but at the specific note which is clicked
+  console.log(event);
+  // Crazy hyped over "this". The "this" is the element you clicked on, and it's able to identify it like so.
+  this.classList.toggle("active");
 }
 
-// Make the note able to have user input and save it
+// TODO: Remove the "active" class from non-focused notes? This could cover the if-else requirement.
+// TODO: Make the note able to have user input and save it
