@@ -1,5 +1,4 @@
-
-
+//Henriette - taget inspiration fra YouTube
 let dt = new Date();
 
 function RenderDate() {
