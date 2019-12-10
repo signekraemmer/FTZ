@@ -52,6 +52,7 @@
 }
 
 .noteCircle {
+  z-index: 2;
   position: absolute;
   width: 4vw;
   height: 4vw;
@@ -62,12 +63,14 @@
 }
 
 .noteInfo {
+  z-index: 4;
   display: none;
-  position: absolute;
+  position: relative;
   width: 40vw;
   height: 30vw;
   background-color: blue;
-  transform: translate(-50%, -100%);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
 }
 
 .active {
