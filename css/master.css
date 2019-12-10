@@ -2,12 +2,11 @@
 
 @media only screen and (max-width: 600px) {
   body {
-    background-color: #002F67;
+      background-image: linear-gradient(#002F67, #001834);
   }
 }
 
 body {
-  background-image: linear-gradient(#002F67, #001834);
   height: 100vh;
 }
 
