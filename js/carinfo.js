@@ -14,8 +14,8 @@ function cursorPosition() {
   createNote(posX, posY);
 }
 
-// Create Dot at cursor position
-// Create note embedded inside Dot
+// Create Circle at cursor position
+// Create note embedded inside Circle
 function createNote(posX, posY) {
   // Get's the height of the navbar
   let topbar = document.getElementsByClassName("logo");
@@ -50,7 +50,7 @@ function openNote() {
   console.log("OpenNote");
   console.log(event);
   // Crazy hyped over "this". The "this" is the element you clicked on, and it's able to identify it like so.
-  this.classList.toggle("active");
+  this.firstElementChild.classList.toggle("active");
 }
 
 // TODO: Remove the "active" class from non-focused notes? This could cover the if-else requirement.

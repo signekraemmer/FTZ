@@ -58,14 +58,16 @@
   background-color: red;
   border-radius: 100%;
   transform: translate(-50%, -50%);
+  overflow: visible;
 }
 
 .noteInfo {
   display: none;
-  position: relative;
+  position: absolute;
   width: 40vw;
   height: 30vw;
   background-color: blue;
+  transform: translate(-50%, -100%);
 }
 
 .active {
