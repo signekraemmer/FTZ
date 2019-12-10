@@ -32,12 +32,13 @@ function createNote(posX, posY) {
 // TODO: Maybe when you add eventlistener when you spawn the nate, it's possible to insert the child with innerHTML, allowing you to addevenetlistineer for the blue note.
   // TODO: This can probably be done when the note is spawned.
   for (let i = 0; i < notes.length; i++) {
-    notes[i].addEventListener("mouseover", openNote);
-    notesInfo[i].addEventListener("mouseout", openNote);
-    notes[i].addEventListener("click", editNote);
+    // notes[i].addEventListener("mouseover", openNote);
+    notes[i].addEventListener("click", openNote);
   }
 
   for (let i = 0; i < notes.length; i++) {
+    // notesInfo[i].addEventListener("mouseout", openNote);
+    // notesInfo[i].addEventListener("click", editNote);
     notesInfo[i].addEventListener("click", editNote);
   }
 }
