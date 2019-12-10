@@ -44,6 +44,8 @@ body {
 }
 
 .burgerList {
+  /* Makes it so you can click through the element on underlying elements */
+  pointer-events: none;
   z-index: 5;
   position: absolute;
   top: 10vh;
