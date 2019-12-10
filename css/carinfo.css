@@ -119,4 +119,6 @@
 
 .itemContent img {
   align-self: center;
+  /* Space between picture and text */
+  padding-bottom: 10px;
 }
