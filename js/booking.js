@@ -48,10 +48,11 @@ function RenderDate() {
 function moveDate(swit) {
   if (swit == 'prev') {
     dt.setMonth(dt.getMonth() - 1);
-    RenderDate();
+   
   }
   else if(swit == 'next') {
     dt.setMonth(dt.getMonth() + 1);
   }
   RenderDate();
 }
+RenderDate();
