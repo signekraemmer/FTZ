@@ -27,9 +27,20 @@ h2 {
 }
 
 .regningList {
-  margin: 0;
-  padding: 3px;
+  margin-top: 2vh;
   list-style-type: none;
   background: #002f67;
+  color: white;
+}
+
+.regningList li {
+  padding: 20px;
+}
+
+.regningList li:nth-child(2n) {
+  width: 110%;
+  margin-left: -3.2vw;
+  padding-left: 8.2vw;
+  background: blue;
   color: white;
 }
