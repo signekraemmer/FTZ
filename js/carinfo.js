@@ -2,6 +2,7 @@ console.log("carinfo.js loaded successfully!");
 
 // This variable holds all the created notes
 let notes = document.getElementsByClassName("noteCircle");
+let notesInfo = document.getElementsByClassName("noteInfo");
 
 // Click on car element
 document.getElementById("carLeft").addEventListener("click", cursorPosition);
@@ -14,8 +15,8 @@ function cursorPosition() {
   createNote(posX, posY);
 }
 
-// Create Dot at cursor position
-// Create note embedded inside Dot
+// Create Circle at cursor position
+// Create note embedded inside Circle
 function createNote(posX, posY) {
   // Get's the height of the navbar
   let topbar = document.getElementsByClassName("logo");
@@ -28,13 +29,22 @@ function createNote(posX, posY) {
   // Inserts a new note inside the defined container
   let noteContainer = document.getElementsByClassName("noteContainer")[0];
   noteContainer.innerHTML += newNote;
-
+// TODO: Maybe when you add eventlistener when you spawn the nate, it's possible to insert the child with innerHTML, allowing you to addevenetlistineer for the blue note.
   // TODO: This can probably be done when the note is spawned.
   for (let i = 0; i < notes.length; i++) {
+    // notes[i].addEventListener("mouseover", openNote);
     notes[i].addEventListener("click", openNote);
+  }
+
+  for (let i = 0; i < notes.length; i++) {
+    // notesInfo[i].addEventListener("mouseout", openNote);
+    // notesInfo[i].addEventListener("click", editNote);
+    notesInfo[i].addEventListener("click", editNote);
   }
 }
 
+
+// TODO: Make a pop-up confirming they want to make a new bubble, and they just didnt miss the one they tried to click.
 // Click on a note
 // TODO: ADD A QUERY https://flaviocopes.com/add-click-event-to-dom-list/
 // console.log(notes);
@@ -46,8 +56,13 @@ function createNote(posX, posY) {
 // Open the note
 function openNote() {
   console.log("OpenNote");
-  notes[0].classList.toggle("active");
-  // TODO: Need to do exactly this, but at the specific note which is clicked
+  // Crazy hyped over "this". The "this" is the element you clicked on, and it's able to identify it like so.
+  this.firstElementChild.classList.toggle("active");
 }
 
-// Make the note able to have user input and save it
+function editNote() {
+  console.log("Editing note");
+}
+
+// TODO: Remove the "active" class from non-focused notes? This could cover the if-else requirement.
+// TODO: Make the note able to have user input and save it

@@ -52,20 +52,28 @@
 }
 
 .noteCircle {
+  /* WARNING: Not working */
+  z-index: 2;
   position: absolute;
-  width: 4vw;
-  height: 4vw;
+  width: 20px;
+  height: 20px;
   background-color: red;
   border-radius: 100%;
   transform: translate(-50%, -50%);
+  overflow: visible;
 }
 
 .noteInfo {
+  /* WARNING: Not working */
+  z-index: 4;
   display: none;
   position: relative;
   width: 40vw;
   height: 30vw;
-  background-color: blue;
+  background-color: #FFFFFF;
+  border: 2px solid;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
 }
 
 .active {

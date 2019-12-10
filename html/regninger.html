@@ -4,69 +4,92 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="Du kan få et overblik over dine udgifter på din bil ved hjælp af DriveClevers
+  kvitterings service, på den måde kan du se hvad du har betalt for reparation af din bil.">
   <title>Se dine regninger</title>
   <link rel="shortcut icon" type="image/png" href="../images/favico.png"/>
   <link rel="stylesheet" href="../css/master.css">
   <link rel="stylesheet" href="../css/regninger.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
   <script src="../js/main.js" defer></script>
   <script src="../js/regninger.js" defer></script>
   </head>
 <!--CHARLOTTE-->
   <body>
 <!--Navigationen inkl. burgermenu START -->
-      <div class="navFlex">
-        <div class="search">
-        </div>
-        <div class="logo">
-        <h1>DriveClever</h1>
-        </div>
 
-        <div class="burgerBlock">
-          <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-          </div>
-        </div>
+<nav>
 
-        <div class="burgerList">
-          <div class="magicBox">
+  <div class="navFlex">
 
-            <div class="listGrid listTop">
-              <img src="../images/ikoner/30px/hjulsmall.png" alt="Mine biler">
-              <p>Mine biler</p>
-              <img src="../images/ikoner/30px/lokationsmall.png" alt="Find bil">
-              <p>Find bil</p>
-              <img src="../images/ikoner/30px/mandsmall.png" alt="Værksteder">
-              <p>Værksteder</p>
-              <img src="../images/ikoner/30px/kalendersmall.png" alt="Bookninger">
-              <p>Bookninger</p>
-              <img src="../images/ikoner/30px/forsikringersmall.png" alt="Forsikringer">
-              <p>Forsikringer</p>
-              <img src="../images/ikoner/30px/regningersmall.png" alt="Regninger">
-              <p>Regninger</p>
-              <img src="../images/ikoner/30px/vejhjaelpsmall.png" alt="Vejhjælp">
-              <p>Vejhjælp</p>
-            </div>
+    <div class="search">
 
-            <div class="listGrid listBottom">
-              <img src="../images/ikoner/30px/indstillingersmall.png" alt="Indstillinger">
-              <p>Indstillinger</p>
-              <img src="../images/ikoner/30px/supportsmall.png" alt="Support">
-              <p>Support</p>
-              <img src="../images/ikoner/30px/logudsmall.png" alt="Log ud">
-              <p>Log ud</p>
-            </div>
-          </div>
-
-        </div>
-
+      <div class="searchBox">
+        <input class="searchText" type="text" name="" value="" placeholder="">
+        <img id="activateSearchBox" src="../images/favico.png" alt="Søg ikon">
       </div>
+
+    </div>
+
+    <div class="logo">
+      <h1>DriveClever</h1>
+    </div>
+
+    <div class="burgerBlock">
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </div>
+
+    <div class="burgerList">
+      <div class="magicBox">
+
+        <div class="listGrid listTop">
+          <img src="../images/ikoner/30px/hjulsmall.png" alt="Mine biler">
+          <p>Mine biler</p>
+          <img src="../images/ikoner/30px/lokationsmall.png" alt="Find bil">
+          <p>Find bil</p>
+          <img src="../images/ikoner/30px/mandsmall.png" alt="Værksteder">
+          <p>Værksteder</p>
+          <img src="../images/ikoner/30px/kalendersmall.png" alt="Bookninger">
+          <p>Bookninger</p>
+          <img src="../images/ikoner/30px/forsikringersmall.png" alt="Forsikringer">
+          <p>Forsikringer</p>
+          <img src="../images/ikoner/30px/regningersmall.png" alt="Regninger">
+          <p>Regninger</p>
+          <img src="../images/ikoner/30px/vejhjaelpsmall.png" alt="Vejhjælp">
+          <p>Vejhjælp</p>
+        </div>
+
+        <div class="listGrid listBottom">
+          <img src="../images/ikoner/30px/indstillingersmall.png" alt="Indstillinger">
+          <p>Indstillinger</p>
+          <img src="../images/ikoner/30px/supportsmall.png" alt="Support">
+          <p>Support</p>
+          <img src="../images/ikoner/30px/logudsmall.png" alt="Log ud">
+          <p>Log ud</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</nav>
+
 <!--Navigationen inkl. burgermenu SLUT -->
 
 <h2>Scan dine regninger her<br> og hold overblik</h2>
 
-<button class="scanButton">SCAN</button>
+<input type="button" class="scanButton" value="SCAN DIN REGNING" />
+<input type="button" class="scanButton" value="UPLOAD FIL" />
+<!-- Listen blev ikke funktionel hvis jeg satte endnu en liste op-->
+<ul class="regningList">
+  <li id="list1">Automester<b style="color: #002f67;">...........................................</b>5.999 kr.</li>
+  <li id="list2">Din Bilpartner<b style="color: blue;">.......................................</b>3.959 kr.</li>
+  <li id="list3">Din Bilpartner<b style="color: #002f67;">.......................................</b>4.999 kr.</li>
+</ul>
+
+</div>
 
   </body>
