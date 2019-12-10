@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
+@media only screen and (max-width: 600px) {
+  body {
+      background-image: linear-gradient(#002F67, #001834);
+  }
+}
+
 body {
-  background-image: linear-gradient(#002F67, #001834);
   height: 100vh;
 }
 
@@ -168,3 +173,23 @@ nav input {
   justify-content: center;
   align-items: center;
 }
+
+
+/*Charlotte her
+
+#signupBtn {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: #9CD9B8;
+  color: #001834;
+  border-radius: 44px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.8s;
+  border: none;
+}
+
+#signupBtn:hover {
+  transform: scale(0.96);
+}
+*/
