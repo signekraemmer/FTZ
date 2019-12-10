@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #002F67;
+  }
+}
+
 body {
   background-image: linear-gradient(#002F67, #001834);
   height: 100vh;
