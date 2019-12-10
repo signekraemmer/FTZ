@@ -33,7 +33,7 @@ function checkInputs() {
     }
 
     else {
-
+      document.getElementById("signupBtn").innerHTML = "Succes!";
   setTimeout(function(){ window.location.href = "frontpage.html";}, 3000);
 
     }
