@@ -115,6 +115,11 @@ section {
   margin: 5%;
 }
 
+.grids {
+  display: flex;
+  justify-content: center;
+}
+
 /* Create two equal columns that floats next to each other */
 .column {
   float: left;
