@@ -11,10 +11,10 @@ box.addEventListener("click", checkedOrNot);
 // Checks if the checkbox is checked or not, as
 function checkedOrNot() {
   if (box.value == "") {
-    box.value = "checked";
+    box.value = "notChecked";
   }
   else {
-    box.value = "";
+    box.value = "checked";
   }
 }
 
