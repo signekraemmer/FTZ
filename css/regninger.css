@@ -104,6 +104,14 @@ input {
   display: block;
 }
 
+.hej1 {
+  float: left;
+}
+
+.hej {
+  float: right;
+}
+
 /* POP UP SLUT */
 
 /* LISTE FUNKTION START */
@@ -142,9 +150,7 @@ input {
 }
 
 .regningList li:nth-child(2n) {
-  width: 110%;
-  margin-left: -3.2vw;
-  padding-left: 8.2vw;
+  width: 100%;
   background: blue;
   color: white;
 }
