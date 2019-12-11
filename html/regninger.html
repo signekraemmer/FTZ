@@ -92,8 +92,8 @@
         <div id="popup">
           <h3>Du er igang med at uploade<br> et billede af din regning</h3>
             <p>Dato 15-12-2019</p>
-            <input id="værkstedsNavn" type="text" name="write here" placeholder="Navn på værksted";>
-            <input id="værkstedPris" type="number" name="write here" placeholder="Pris på regning";>
+            <input id="vaerkstedsNavn" type="text" name="write here" placeholder="Navn på værksted";>
+            <input id="vaerkstedPris" type="number" name="write here" placeholder="Pris på regning";>
           <p>Dit uploadede billede:</p>
           <div class="billedeUpload">
             <p>Billede009.png</p>
@@ -107,6 +107,28 @@
 
 <!--popup1 SLUT-->
 
+<!--popup2 START-->
+      <button id="scanPicture">Tag billede af regning</button>
+
+      <div class="popupRegninger">
+        <div id="popup">
+          <h3>Du er igang med at uploade<br> et billede af din regning</h3>
+            <p>Dato 15-12-2019</p>
+            <input id="vaerkstedsNavn" type="text" name="write here" placeholder="Navn på værksted";>
+            <input id="vaerkstedPris" type="number" name="write here" placeholder="Pris på regning";>
+          <p>Dit uploadede billede:</p>
+          <div class="billedeUpload">
+            <p>Billede009.png</p>
+          </div>
+        </p>
+        <div id="closeRegninger" class="button-holder one-button">
+          <a href="#">GEM</a>
+        </div>
+        </div>
+      </div>
+
+<!--popup2 SLUT-->
+
 <input type="button" class="scanButton" value="Upload regning fra filer" />
 <!-- Listen blev ikke funktionel hvis jeg satte endnu en liste op-->
 <ul class="regningList">
@@ -115,6 +137,6 @@
   <li id="list3">Din Bilpartner<b style="color: #002f67;">.......................................</b>4.999 kr.</li>
 </ul>
 
-</section>
+
 
   </body>

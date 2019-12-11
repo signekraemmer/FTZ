@@ -1,4 +1,4 @@
-console.log("regninger loaded");
+
 // popup START //
 try {
 
@@ -25,20 +25,25 @@ regning[0].classList.toggle("popupActive");
 
 // Liste funktion START //
 
-document.querySelector('input[type="button"]').addEventListener('click', function() {
+document.querySelector('input[type="button"]').addEventListener('click', newBill);
+document.getElementById("closeRegninger").addEventListener('click', newBill);
+function newBill() {
+  let vaarksted = document.getElementById('vaerkstedsNavn').value;
+  let pris = document.getElementById('vaerkstedPris').value;
+  console.log(vaarksted);
+console.log(pris);
   //could use el - what is just an identifier and it refers to an element,
   // a DOM element, which is a convention in that library.
-  var listen = document.createElement('li');
-  var newLists = document.createElement('li');
-  listen.newLists = newLists;
-  listen.innerHTML = newLists;
- document.querySelector('.regningList').appendChild(listen);
-});
+  let newListItem = document.createElement('li');
+  newListItem.innerHTML = vaarksted + '<b style="color: #002f67;">.......................................</b>' + pris + ' kr.';
 
-document.querySelector('section').addEventListener('click', function(event) {
- if (event.target.tagName.toLowerCase() === 'li') {
-   alert(event.target.id);
- }
-});
+ document.querySelector('.regningList').appendChild(newListItem);
+}
+
+// document.querySelector('section').addEventListener('click', function(event) {
+//  if (event.target.tagName.toLowerCase() === 'li') {
+//    alert(event.target.id);
+//  }
+// });
 
 // Liste funktion SLUT //

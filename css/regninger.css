@@ -41,11 +41,17 @@ input {
   display: block;
   width: 70vw;
   height: 4vh;
-  margin: 0px 0px 2vh 4.5vw;
-  border: none;
-  border-radius: 10px;
-  padding: 10px;
   text-align: center;
+  display: block;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid white;
+  position: relative;
+  margin: 3vh 6vw;
+  background: none;
+  font-size: 16px;
+  color: white;
 }
 
 /* Pop up'en til terms and conditions */
