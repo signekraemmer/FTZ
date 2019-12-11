@@ -5,6 +5,103 @@ h2 {
   margin-top: 2vh;
 }
 
+/* POP UP START */
+
+.knapperPopup {
+justify-content: center;
+}
+
+#scanPicture {
+  margin-top: 2vh;
+  margin-left: 17vw;
+  width: 65vw;
+  height: 6vh;
+  border: none;
+  border-radius: 44px;
+  font-size: 16px;
+  background: #9CD9B8;
+  color: #001834;
+  border-radius: 44px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.billedeUpload {
+  width: 40vw;
+  height: 6vh;
+  background: #002f67;
+  border-radius: 44px;
+  justify-content: center;
+  margin-left: 21vw;
+  margin-top: 1vh;
+}
+
+input {
+  display: block;
+  width: 70vw;
+  height: 4vh;
+  margin: 0px 0px 2vh 4.5vw;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Pop up'en til terms and conditions */
+.popupRegninger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin: 0 auto;
+  height: 100vh;
+  width: 100vw;
+  display: none;
+  color: white;
+}
+
+#popup {
+  width: 84%;
+  z-index: 2;
+  background: #002f67;
+  border-radius: 8px;
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1E437D;
+}
+
+#popup h3 {
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+
+#popup p {
+  margin: 15px;
+  padding: 0;
+}
+
+#popup .button-holder a {
+  color: white;
+  text-decoration: none;
+  line-height: 45px;
+  font-weight: bold;
+  display: block;
+  border-top: 1px solid black;
+}
+.popupActive {
+  display: block;
+}
+
+/* POP UP SLUT */
+
+/* LISTE FUNKTION START */
+
 .scanButton {
   text-decoration-color: white;
   width: 65%;
@@ -45,3 +142,5 @@ h2 {
   background: blue;
   color: white;
 }
+
+/* LISTE FUNKTION SLUT */

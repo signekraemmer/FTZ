@@ -1,6 +1,30 @@
 console.log("regninger loaded");
+// popup START //
+try {
 
-alert("hey");
+  let regningContent = document.getElementById("scanPicture");
+
+  regningContent.addEventListener("click", showRegn);
+
+  document.getElementById("closeRegninger").addEventListener("click", showRegn);
+
+
+} catch (e) {
+  console.log(e);
+} finally {
+  console.log("showing regninger works");
+}
+
+function showRegn() {
+let regning = document.getElementsByClassName('popupRegninger');
+
+regning[0].classList.toggle("popupActive");
+}
+
+// popup END //
+
+// Liste funktion START //
+
 document.querySelector('input[type="button"]').addEventListener('click', function() {
   //could use el - what is just an identifier and it refers to an element,
   // a DOM element, which is a convention in that library.
@@ -16,3 +40,5 @@ document.querySelector('section').addEventListener('click', function(event) {
    alert(event.target.id);
  }
 });
+
+// Liste funktion SLUT //
