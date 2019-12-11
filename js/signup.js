@@ -34,7 +34,7 @@ function checkInputs() {
 
     else {
       document.getElementById("signupBtn").innerHTML = '<img src="../images/ikoner/flueben.png" alt="flueben ikon">Succes!';
-  setTimeout(function(){ window.location.href = "frontpage.html";}, 1000);
+  setTimeout(function(){ window.location.href = "frontpage.html";}, 1500);
 
     }
 }
