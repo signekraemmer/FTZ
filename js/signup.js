@@ -4,9 +4,11 @@ document.getElementById("signupBtn").addEventListener("click", checkInputs);
 // This variable gets the inputfields
 let inp = document.getElementsByClassName("formInput");
 
+// Gets the checkbox object into a variable
 let box = document.getElementById("checkbox");
 box.addEventListener("click", checkedOrNot);
 
+// Checks if the checkbox is checked or not, and assigns the proper value as so
 function checkedOrNot() {
   if (box.value == "notChecked") {
     box.value = "checked";
@@ -19,7 +21,6 @@ function checkedOrNot() {
 
 //Checks the rest of the inputfields
 function checkInputs() {
-  // Minus by 1 to avoid counting the checkbox
     if (inp[0].value == "") {
 
       alert("Indtast venligst " + inp[0].placeholder);
