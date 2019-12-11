@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="da" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="Opret en bruge hos DriveClever og får fordele som at gemme dine
-    forsikringspapirer, regninger og booke din bils næste værkstedstid.">
-    <link rel="shortcut icon" type="image/png" href="../images/favico.png"/>
-    <link rel="stylesheet" href="../css/login.css">
-    <link rel="stylesheet" href="../css/master.css">
-    <title>Opret en bruger på DriveClever</title>
-    <script src="../js/signup.js" defer></script>
-  </head>
-  <body>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Søg nummerplade</title>
+  <link rel="shortcut icon" type="image/png" href="../images/favico.png" />
+  <link rel="stylesheet" href="../css/master.css">
+  <link rel="stylesheet" href="../css/searchcars.css">
+  <script src="../js/main.js" defer></script>
+</head>
+
+<body>
+
 
     <nav>
 
@@ -73,21 +74,32 @@
       </div>
     </nav>
 
-    <div class="signupForm">
-      <form action="index.html" method="post">
-          <h1>Opret bruger</h1>
-          <input class="formInput" type="text" placeholder="Fulde navn">
-          <input class="formInput" type="email" placeholder="E-mail">
-          <input class="formInput" type="password" placeholder="Adgangskode">
-          <input class="formInput" type="password" placeholder="Gentag adgangskode">
-          <div class="checkContainer">
-            <input id="checkbox" type="checkbox" placeholder="Vilkår og Brugerbetingelser" class="formInput" value="">
-            <button type="button" name="button" id="terms" onclick="alert('Popup missing')">Vilkår og brugerbetingelser</button>
-          </div>
-          <a id="signupBtn">Opret bruger</a>
-          <a href="login.html">Har allerede en bruger?</a>
-      </form>
+  <div class="searchContainer">
+
+    <h1>Søg nummerplade</h1>
+
+    <div class="searchBar">
+
+      <div class="inputBox">
+        <input type="text" placeholder="ZX12345" maxlength="7">
+        <img src="../images/search.png" alt="search icon">
+      </div>
+
+      <div class="inputLine"></div>
+
+      <button class="searchButton">Søg</button>
 
     </div>
-  </body>
+
+    <div class="userOption">
+
+      <button>Login</button>
+      <button>Opret bruger</button>
+
+    </div>
+
+  </div>
+
+</body>
+
 </html>

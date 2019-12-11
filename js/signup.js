@@ -4,9 +4,23 @@ document.getElementById("signupBtn").addEventListener("click", checkInputs);
 // This variable gets the inputfields
 let inp = document.getElementsByClassName("formInput");
 
+// Gets the checkbox object into a variable
+let box = document.getElementById("checkbox");
+box.addEventListener("click", checkedOrNot);
+
+// Checks if the checkbox is checked or not, as
+function checkedOrNot() {
+  if (box.value == "") {
+    box.value = "checked";
+  }
+  else {
+    box.value = "";
+  }
+}
+
+
 //Checks the rest of the inputfields
 function checkInputs() {
-  // Minus by 1 to avoid counting the checkbox
     if (inp[0].value == "") {
 
       alert("Indtast venligst " + inp[0].placeholder);
@@ -26,6 +40,10 @@ function checkInputs() {
 
       alert("Indtast venligst " + inp[3].placeholder);
     }
+    else if (inp[4].value == "") {
+
+      alert("Venligst læs " + inp[4].placeholder);
+    }
 
     else if (inp[2].value != inp[3].value) {
 
@@ -34,11 +52,11 @@ function checkInputs() {
 
     else {
       document.getElementById("signupBtn").innerHTML = '<img src="../images/ikoner/flueben.png" alt="flueben ikon">Succes!';
-  setTimeout(function(){ window.location.href = "frontpage.html";}, 1000);
+  setTimeout(function(){ window.location.href = "frontpage.html";}, 1500);
 
     }
 }
 
-for (let i = 0; i < inp.length; i++) {
+//for (let i = 0; i < inp.length; i++) {
 
-}
+//}
