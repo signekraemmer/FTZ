@@ -4,6 +4,19 @@ document.getElementById("signupBtn").addEventListener("click", checkInputs);
 // This variable gets the inputfields
 let inp = document.getElementsByClassName("formInput");
 
+let box = document.getElementById("checkbox");
+box.addEventListener("click", checkedOrNot);
+
+function checkedOrNot() {
+  if (box.value == "notChecked") {
+    box.value = "checked";
+  }
+  else {
+    box.value = "notChecked";
+  }
+}
+
+
 //Checks the rest of the inputfields
 function checkInputs() {
   // Minus by 1 to avoid counting the checkbox
@@ -26,6 +39,10 @@ function checkInputs() {
 
       alert("Indtast venligst " + inp[3].placeholder);
     }
+    else if (inp[4].value == "") {
+
+      alert("Venligst læs " + inp[3].placeholder);
+    }
 
     else if (inp[2].value != inp[3].value) {
 
@@ -39,6 +56,6 @@ function checkInputs() {
     }
 }
 
-for (let i = 0; i < inp.length; i++) {
+//for (let i = 0; i < inp.length; i++) {
 
-}
+//}
