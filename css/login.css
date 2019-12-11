@@ -74,7 +74,7 @@ body {
   align-items: center;
 }
 
-.checkBoxen {
+#checkbox {
   max-height: 20px;
   width: 50px !important;
 }

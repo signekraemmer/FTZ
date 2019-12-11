@@ -8,13 +8,13 @@ let inp = document.getElementsByClassName("formInput");
 let box = document.getElementById("checkbox");
 box.addEventListener("click", checkedOrNot);
 
-// Checks if the checkbox is checked or not, and assigns the proper value as so
+// Checks if the checkbox is checked or not, as
 function checkedOrNot() {
-  if (box.value == "notChecked") {
+  if (box.value == "") {
     box.value = "checked";
   }
   else {
-    box.value = "notChecked";
+    box.value = "";
   }
 }
 
@@ -42,7 +42,7 @@ function checkInputs() {
     }
     else if (inp[4].value == "") {
 
-      alert("Venligst læs " + inp[3].placeholder);
+      alert("Venligst læs " + inp[4].placeholder);
     }
 
     else if (inp[2].value != inp[3].value) {
