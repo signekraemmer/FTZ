@@ -28,14 +28,13 @@ regning[0].classList.toggle("popupActive");
 document.querySelector('input[type="button"]').addEventListener('click', newBill);
 document.getElementById("closeRegninger").addEventListener('click', newBill);
 function newBill() {
-  let vaarksted = document.getElementById('vaerkstedsNavn').value;
-  let pris = document.getElementById('vaerkstedPris').value;
-  console.log(vaarksted);
-console.log(pris);
-  //could use el - what is just an identifier and it refers to an element,
-  // a DOM element, which is a convention in that library.
+  let vaerksted = document.getElementById('vaerkstedsNavn').value;
+  let pris = document.getElementById('vaerkstedPris').value + ' kr.';
+  console.log(vaerksted);
+  console.log(pris);
+
   let newListItem = document.createElement('li');
-  newListItem.innerHTML = vaarksted + '<b style="color: #002f67;">.......................................</b>' + pris + ' kr.';
+  newListItem.innerHTML = vaerksted + pris;
 
  document.querySelector('.regningList').appendChild(newListItem);
 }

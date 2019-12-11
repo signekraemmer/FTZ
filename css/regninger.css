@@ -104,11 +104,19 @@ input {
   display: block;
 }
 
-.hej1 {
+.vaerkstedet {
   float: left;
 }
 
-.hej {
+.prisen {
+  float: right;
+}
+
+.vaerksted {
+  float: right;
+}
+
+.pris {
   float: right;
 }
 
