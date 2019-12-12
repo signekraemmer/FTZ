@@ -31,7 +31,7 @@ input {
   transform: translateX(-50%);
   width: 70vw;
   height: 30px;
-  font-size: 24px;
+  font-size: 22px;
   /* Removes decorations */
   border:none;
   background-color:transparent;
@@ -48,7 +48,7 @@ input {
 button {
   position: relative;
   margin-top: 2vh;
-  font-size: 20px;
+  font-size: 22px;
   height: 40px;
   width: 100px;
   background-color: #9CD9B9;

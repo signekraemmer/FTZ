@@ -280,7 +280,7 @@ section {
 }
 
 .downloadButton {
-  background-color: #b5b5b5;
+  background-color: #9CD9B8;
   padding: 1em;
   border-width: 2px;
   border-color: #000000;
@@ -291,7 +291,7 @@ section {
 
 
 .downloadButton a {
-  color: #ffffff;
+  color: #000000;
   font-weight: bold;
   text-decoration: none;
 }
@@ -299,8 +299,12 @@ section {
 .center {
   display: flex;
   margin: auto;
-  width: 30%;
+  width: 50%;
   padding: 10px;
+}
+
+.centerText {
+  text-align: center;
 }
 
 /*ICONS START*/
@@ -359,4 +363,9 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+.miniPhone {
+  width: 375px;
+  height: 812px;
 }
