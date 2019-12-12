@@ -46,7 +46,7 @@ else {
  document.querySelector('.regningList').appendChild(newListItem);
 
 
-   setTimeout(function(){ alert("Du har succesfuldt uploadet din regning"); }, 300);
+   setTimeout(function(){ alert("Du har succesfuldt uploadet en regning"); }, 300);
 }
 
 
