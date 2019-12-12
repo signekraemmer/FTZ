@@ -29,15 +29,31 @@ document.querySelector('input[type="button"]').addEventListener('click', newBill
 document.getElementById("closeRegninger").addEventListener('click', newBill);
 function newBill() {
   let vaerksted = document.getElementById('vaerkstedsNavn').value;
-  let pris = document.getElementById('vaerkstedPris').value + ' kr.';
+  let pris = document.getElementById('vaerkstedPris').value;
   console.log(vaerksted);
   console.log(pris);
 
+if (vaerksted == "" || pris == "") {
+console.log("error");
+alert("Husk at udfylde både værksted og pris");
+}
+
+else {
   let newListItem = document.createElement('li');
-  newListItem.innerHTML = vaerksted + pris;
+
+  newListItem.innerHTML = vaerksted + '<span class="prisen">' + pris + " kr." + '</span>';
 
  document.querySelector('.regningList').appendChild(newListItem);
+
+
+   setTimeout(function(){ alert("Du har succesfuldt uploadet din regning"); }, 300);
 }
+
+
+ }
+
+
+
 
 // document.querySelector('section').addEventListener('click', function(event) {
 //  if (event.target.tagName.toLowerCase() === 'li') {
