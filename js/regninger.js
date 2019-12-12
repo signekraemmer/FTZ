@@ -35,7 +35,7 @@ function newBill() {
 
 if (vaerksted == "" || pris == "") {
 console.log("error");
-alert("Hej din ged");
+alert("Husk at udfylde både værksted og pris");
 }
 
 else {
@@ -46,7 +46,7 @@ else {
  document.querySelector('.regningList').appendChild(newListItem);
 
 
-   setTimeout(function(){ alert("hejj"); }, 2000);
+   setTimeout(function(){ alert("Du har succesfuldt uploadet din regning"); }, 300);
 }
 
 
