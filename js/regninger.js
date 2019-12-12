@@ -25,7 +25,6 @@ regning[0].classList.toggle("popupActive");
 
 // Liste funktion START //
 
-document.querySelector('input[type="button"]').addEventListener('click', newBill);
 document.getElementById("closeRegninger").addEventListener('click', newBill);
 function newBill() {
   let vaerksted = document.getElementById('vaerkstedsNavn').value;
@@ -45,20 +44,8 @@ else {
 
  document.querySelector('.regningList').appendChild(newListItem);
 
-
-   setTimeout(function(){ alert("Du har succesfuldt uploadet en regning"); }, 300);
+ setTimeout(function(){ alert("Du har succesfuldt uploadet en regning"); }, 300);
 }
-
-
  }
-
-
-
-
-// document.querySelector('section').addEventListener('click', function(event) {
-//  if (event.target.tagName.toLowerCase() === 'li') {
-//    alert(event.target.id);
-//  }
-// });
 
 // Liste funktion SLUT //
