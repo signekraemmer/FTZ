@@ -96,14 +96,11 @@ ul li a:hover {
 
 /* SECTION SECTION */
 .startSection {
-  width: 100%;
-  height: 100vh;
   text-align: center;
 }
 
 section {
   width: 100%;
-  min-height: 90vh; /* DELETE - Fill space for proof of concept */
 }
 
 .content {
