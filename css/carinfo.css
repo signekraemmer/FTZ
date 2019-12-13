@@ -1,3 +1,7 @@
+h1 {
+  font-size: 24px;
+}
+
 .focusedCarContainer {
   position: relative;
   height: 400px;
