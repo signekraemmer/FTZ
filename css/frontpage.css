@@ -58,6 +58,10 @@ button {
   transform: translateX(-50%);
 }
 
+.signUp {
+  background-color: #FFFFFF;
+}
+
 .inputLine {
   position: relative;
   background-color: #FFFFFF;
