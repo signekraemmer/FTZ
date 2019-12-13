@@ -15,8 +15,8 @@ function cursorPosition() {
   createNote(posX, posY);
 }
 
-// Create Circle at cursor position
-// Create note embedded inside Circle
+  // Create Circle at cursor position
+  // Create note embedded inside Circle
 function createNote(posX, posY) {
   // Get's the height of the navbar
   let topbar = document.getElementsByClassName("logo");
@@ -29,15 +29,15 @@ function createNote(posX, posY) {
   // Inserts a new note inside the defined container
   let noteContainer = document.getElementsByClassName("noteContainer")[0];
   noteContainer.innerHTML += newNote;
-// TODO: Maybe when you add eventlistener when you spawn the nate, it's possible to insert the child with innerHTML, allowing you to addevenetlistineer for the blue note.
+  // TODO: Maybe when you add eventlistener when you spawn the nate, it's possible to insert the child with innerHTML, allowing you to addevenetlistineer for the blue note.
   // TODO: This can probably be done when the note is spawned.
   for (let i = 0; i < notes.length; i++) {
-    // notes[i].addEventListener("mouseover", openNote);
-    notes[i].addEventListener("click", openNote);
+    notes[i].addEventListener("mouseover", openNote);
+    // notes[i].addEventListener("click", openNote);
   }
 
   for (let i = 0; i < notes.length; i++) {
-    // notesInfo[i].addEventListener("mouseout", openNote);
+    notesInfo[i].addEventListener("mouseout", openNote);
     // notesInfo[i].addEventListener("click", editNote);
     notesInfo[i].addEventListener("click", editNote);
   }
@@ -64,5 +64,5 @@ function editNote() {
   console.log("Editing note");
 }
 
-// TODO: Remove the "active" class from non-focused notes? This could cover the if-else requirement.
-// TODO: Make the note able to have user input and save it
+  // TODO: Remove the "active" class from non-focused notes? This could cover the if-else requirement.
+  // TODO: Make the note able to have user input and save it
