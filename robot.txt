@@ -1,2 +1,10 @@
-User-Agent: *
+User-agent: * 
 Disallow:
+Allow: 
+
+User-agent: Googlebot 
+Disallow: /calendar/
+
+User-agent: Bingbot
+Disallow: /calendar/
+

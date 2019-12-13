@@ -72,6 +72,10 @@ nav a:visited, nav a:hover, nav a:active, nav a:link {
   transition: 0.4s ease;
 }
 
+.magicBox p {
+  pointer-events: all;
+}
+
 .burgerActive {
   transform: translateX(0%);
 }
