@@ -114,11 +114,12 @@ nav a:visited, nav a:hover, nav a:active, nav a:link {
   color: #FFFFFF;
   flex: 3;
   text-align: center;
-  line-height: 10vh;
 }
 
-.logo p {
-  vertical-align: middle;
+.logo img {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /* SEARCH SECTION */
