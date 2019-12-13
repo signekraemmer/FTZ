@@ -23,7 +23,7 @@ regning[0].classList.toggle("popupActive");
 
 // popup END //
 
-// Liste funktion START //
+// Liste funktion START - Listen er inspireret af jsfiddle.net, men er ændret rigtig meget //
 
 document.getElementById("closeRegninger").addEventListener('click', newBill);
 function newBill() {
