@@ -4,9 +4,9 @@ try {
 
   let regningContent = document.getElementById("scanPicture");
 
-  regningContent.addEventListener("click", showRegn);
+  regningContent.addEventListener("click", showRegnPopup);
 
-  document.getElementById("closeRegninger").addEventListener("click", showRegn);
+  document.getElementById("closeRegninger").addEventListener("click", showRegnPopup);
 
 
 } catch (e) {
@@ -15,7 +15,7 @@ try {
   console.log("showing regninger works");
 }
 
-function showRegn() {
+function showRegnPopup() {
 let regning = document.getElementsByClassName('popupRegninger');
 
 regning[0].classList.toggle("popupActive");
