@@ -29,16 +29,13 @@ function createNote(posX, posY) {
   // Inserts a new note inside the defined container
   let noteContainer = document.getElementsByClassName("noteContainer")[0];
   noteContainer.innerHTML += newNote;
-  // TODO: Maybe when you add eventlistener when you spawn the nate, it's possible to insert the child with innerHTML, allowing you to addevenetlistineer for the blue note.
-  // TODO: This can probably be done when the note is spawned.
+
   for (let i = 0; i < notes.length; i++) {
     notes[i].addEventListener("mouseover", openNote);
-    // notes[i].addEventListener("click", openNote);
   }
 
   for (let i = 0; i < notes.length; i++) {
-    notesInfo[i].addEventListener("mouseout", openNote);
-    // notesInfo[i].addEventListener("click", editNote);
+    notesInfo[i].addEventListener("mouseout", closeNote);
     notesInfo[i].addEventListener("click", editNote);
   }
 }
@@ -53,12 +50,28 @@ function createNote(posX, posY) {
 //   notes[i].addEventListener("click", openNote);
 // }
 
+let c = 0;
+
+function closeNote() {
+  console.log("CloseNote");
+  this.classList.toggle("active");
+}
+
 // Open the note
 function openNote() {
-  console.log("OpenNote");
+  console.log("OpenNote" + c);
+  c++;
   // Crazy hyped over "this". The "this" is the element you clicked on, and it's able to identify it like so.
   // WARNING: It doesn't work because it takes the child of the note not the circle. Distiguish using if else and on the class .contains()
-  this.firstElementChild.classList.toggle("active");
+if (this.firstElementChild == null) {
+  // this.classList.toggle("active");
+  console.log("No Note");
+}
+
+else {
+
+  this.firstElementChild.classList.add("active");
+}
 }
 
 function editNote() {
