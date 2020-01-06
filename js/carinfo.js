@@ -50,8 +50,6 @@ function createNote(posX, posY) {
 //   notes[i].addEventListener("click", openNote);
 // }
 
-let c = 0;
-
 function closeNote() {
   console.log("CloseNote");
   this.classList.toggle("active");
@@ -59,8 +57,7 @@ function closeNote() {
 
 // Open the note
 function openNote() {
-  console.log("OpenNote" + c);
-  c++;
+  console.log("OpenNote");
   // Crazy hyped over "this". The "this" is the element you clicked on, and it's able to identify it like so.
   // WARNING: It doesn't work because it takes the child of the note not the circle. Distiguish using if else and on the class .contains()
 if (this.firstElementChild == null) {
